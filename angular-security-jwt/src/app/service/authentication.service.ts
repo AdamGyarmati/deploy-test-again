@@ -11,7 +11,7 @@ import {AuthResponse} from "../models/authResponse.model";
 export class AuthenticationService {
   // BASE_URL = 'http://localhost:9000/api/users/';
   // BASE_URL = 'http://172.18.0.2:9000/api/users/';
-  BASE_URL = 'http://ec2-3-79-104-180.eu-central-1.compute.amazonaws.com:9000/api/users/';
+  BASE_URL = 'http://ec2-3-70-135-81.eu-central-1.compute.amazonaws.com:9000/api/users/';
 
   private _userObject = new BehaviorSubject<User | null>(null);
 
