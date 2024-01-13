@@ -26,13 +26,13 @@ jobs:
 # Backend image buildelése és pusholása
     - name: Build the Backend Docker image
     # Fontos, hogy az image-név a dockerhub felhasználónévvel kezdődjön
-      run: docker build -t gyarmatiadam/cicd-pipeline-backend-test security-demo-with-angular/
+      run: docker build -t gyarmatiadam/cicd-pipeline-backend-test-together security-demo-with-angular/
     - name: Backend image push to Dockerhub
-      run: docker push gyarmatiadam/cicd-pipeline-backend-test:latest
+      run: docker push gyarmatiadam/cicd-pipeline-backend-test-together:latest
 
 # Frontend image buildelése és pusholása
     - name: Build the Frontend Docker image
     # Fontos, hogy az image-név a dockerhub felhasználónévvel kezdődjön
-      run: docker build -t gyarmatiadam/cicd-pipeline-frontend-test angular-security-jwt/
+      run: docker build -t gyarmatiadam/cicd-pipeline-frontend-test-together angular-security-jwt/
     - name: Frontend image push to Dockerhub
-      run: docker push gyarmatiadam/cicd-pipeline-frontend-test:latest
+      run: docker push gyarmatiadam/cicd-pipeline-frontend-test-together:latest
