@@ -6,5 +6,5 @@ RUN npm run build --prod
 
 FROM nginx:latest
 COPY --from=node /app/dist/angular-security-jwt /usr/share/nginx/html
-EXPOSE 80
+EXPOSE 4200
 
